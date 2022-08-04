@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="my-5 text-danger">BÀI TẬP MẢNG</h1>
+        <div class="d-flex">
+            <input type="number" class="form-control w-50 mr-5" id="number" placeholder="Nhập số">
+            <button class="btn btn-primary" onclick="addNumber()">Thêm số</button>
+        </div>
+        <div id="showNumber" class="alert alert-success mt-2" style="display: none;"></div>
+        <div>
+            <h2>1. Tổng các số dương trong mảng.</h2>
+            <button class="btn btn-primary mt-1" onclick="click1()">1.Tính tổng các số dương</button>
+            <div id="show1" class="alert alert-success mt-2" style="display: none;"></div>
+        </div>
+        <div>
+            <h2>2. Đếm có bao nhiêu số dương trong mảng</h2>
+            <button class="btn btn-primary mt-1" onclick="click2()">2.Đếm số dương</button>
+            <div id="show2" class="alert alert-success mt-2" style="display: none;"></div>
+        </div>
+        <div>
+            <h2>3. Tìm số nhỏ nhất trong mảng.</h2>
+            <button class="btn btn-primary mt-1" onclick="click3()">3.Số nhỏ nhất</button>
+            <div id="show3" class="alert alert-success mt-2" style="display: none;"></div>
+        </div>
+        <div>
+            <h2>4. Tìm số dương nhỏ nhất trong mảng.</h2>
+            <button class="btn btn-primary mt-1" onclick="click4()">4.Số dương nhỏ nhất</button>
+            <div id="show4" class="alert alert-success mt-2" style="display: none;"></div>
+        </div>
+        <div>
+            <h2>5. Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn thì trả về -1.</h2>
+            <button class="btn btn-primary mt-1" onclick="click5()">5.Số chẵn cuối cùng</button>
+            <div id="show5" class="alert alert-success mt-2" style="display: none;"></div>
+        </div>
+        <div class="mt-2">
+            <h2>6. Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí muốn đổi chỗ giá trị).</h2>
+            <div class="d-flex">
+                <input type="number" class="form-control w-50 mr-5" id="number1" placeholder="Nhập vị trí 1">
+                <input type="number" class="form-control w-50 " id="number2" placeholder="Nhập vị trí 2">
+            </div>
+            <button class="btn btn-primary mt-1" onclick="click6()">6.Đổi chổ 2 số</button>
+            <div id="show6" class="alert alert-success mt-2" style="display: none;"></div>
+        </div>
+        <div>
+            <h2>7. Sắp xếp mảng theo thứ tự tăng dần.</h2>
+            <button class="btn btn-primary mt-1" onclick="click7()">7.Sắp xếp tăng dần</button>
+            <div id="show7" class="alert alert-success mt-2" style="display: none;"></div>
+        </div>
+        <div>
+            <h2>8. Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về – 1.</h2>
+            <button class="btn btn-primary mt-1" onclick="click8()">8.Số nguyên tố đầu tiên</button>
+            <div id="show8" class="alert alert-success mt-2" style="display: none;"></div>
+        </div>
+        <h2>9. Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?</h2>
+        <div class="d-flex mt-2">
+            <input type="number" class="form-control w-50 mr-5" id="floatNumber" placeholder="Nhập số">
+            <button class="btn btn-primary" onclick="addFloatNumber()">Thêm số</button>
+        </div>
+        <div id="showFloatNumber" class="alert alert-success mt-2" style="display: none;"></div>
+        <div>
+            <button class="btn btn-primary mt-2" onclick="click9()">Đếm số nguyên</button>
+            <div id="show9" class="alert alert-success mt-2" style="display: none;"></div>
+        </div>
+        <div>
+            <h2>10. So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn.</h2>
+            <button class="btn btn-primary mt-2" onclick="click10()">So sánh</button>
+            <div id="show10" class="alert alert-success mt-2" style="display: none;"></div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
